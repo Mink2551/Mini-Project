@@ -2,7 +2,7 @@ var typeCounter = 0; // Counter variable to track the number of times the functi
 
 function showPrompt() {
     typeCounter++; // Increment the counter each time the function is called
-    var name = prompt("Type Anyone:");
+    var name = prompt("Type Anyone (You / Dad / Mom / Bro):");
     var resultDiv = document.querySelector('.result');
     
     if (name === "You") 
@@ -27,8 +27,8 @@ function showPrompt() {
     }
     else 
     {
-        alert("Type the correct keyword");
-        console.log("Type the correct keyword");
+        alert("Type the correct keyword (You / Dad / Mom / Bro)");
+        console.log("Type the correct keyword (You / Dad / Mom / Bro)");
     }
 
     console.log("Prompt function called " + typeCounter + " time(s)"); // Log the number of times the function is called
@@ -44,7 +44,7 @@ function showContent() {
         "Dad": "Content 3",
         "Bro": "Content 4"
     };
-    var name = prompt("Type Anyone:");
+    var name = prompt("Type Anyone (You / Dad / Mom / Bro):");
     var resultDiv = document.querySelector('.result');
 
     if (contentMap.hasOwnProperty(name)) 
@@ -52,7 +52,7 @@ function showContent() {
         resultDiv.textContent = contentMap[name];
     } else 
     {
-        resultDiv.textContent = "Type the correct keyword";
+        resultDiv.textContent = "Type the correct keyword (You / Dad / Mom / Bro)";
     }
 
     console.log("Content function called " + typeCounter + " time(s)"); // Log the number of times the function is called
